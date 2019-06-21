@@ -1,14 +1,24 @@
 Package: completeness
-Title: What the Package Does (One Line, Title Case)
+Title: Calculate Diversity Estimates For Completeness On Grid
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Kévin",
+           family = "Cilleros",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: What license it uses
+           email = "kevin.cilleros@gmail.com",
+           comment = c(ORCID = "0000-0003-1648-1032"))
+Description: Functions to compute completeness of assemblages in cell
+    based on estimates of diversity according to different methods: proxy of 
+    extrapolated species richness, beta-diversity or extrapolation on lower 
+    resolution grids
+License: CC0
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1.9000
+Imports:
+    vegan,
+    reshape,
+    reshape2,
+    magrittr,
+    CommEcol,
+    betapart
